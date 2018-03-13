@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Where to eat in Tsinghua</string>
+    <string name="random_select">Select a canteen randomly</string>
+</resources>
