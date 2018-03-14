@@ -25,6 +25,6 @@ public class SelectCanteenActivity extends AppCompatActivity {
 
         //将随机结果显示到文本框中去
         TextView textView = findViewById(R.id.textView);
-        textView.setText(canteen_selected);
+        textView.setText("那就去" + canteen_selected + "吧");
     }
 }

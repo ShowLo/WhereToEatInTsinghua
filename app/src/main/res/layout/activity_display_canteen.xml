@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sunset"
+    android:background="@drawable/dandelion"
     tools:context="com.example.myfirstapp.SelectCanteenActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text=""
-        android:textColor="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_purple"
         android:textSize="100px"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

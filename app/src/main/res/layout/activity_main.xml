@@ -72,12 +72,34 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.0" />
 
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="287dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/guideline1" />
 
     <ImageButton
@@ -87,17 +109,10 @@
         android:layout_margin="30dp"
         android:background="@drawable/add"
         android:onClick="addCanteen"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner"
-        app:layout_constraintLeft_toRightOf="@id/spinner"
-        app:layout_constraintTop_toTopOf="@+id/spinner" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
-
+        app:layout_constraintBottom_toBottomOf="@id/spinner"
+        app:layout_constraintLeft_toRightOf="@id/guideline4"
+        app:layout_constraintRight_toLeftOf="@id/guideline5"
+        app:layout_constraintTop_toTopOf="@id/spinner" />
 
     <TableLayout
         android:id="@+id/canteenTable"
